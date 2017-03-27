@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            JSONArray jsonArray = JSONParser.getArray();
+            JSONArray jsonArray = JSONGetter.getArray();
             try{
                 if(jsonArray != null){
                     int length = jsonArray.length();

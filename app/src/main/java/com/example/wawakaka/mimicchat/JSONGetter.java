@@ -16,12 +16,12 @@ import okhttp3.Response;
  * Created by Wawakaka on 3/25/2017.
  */
 
-public class JSONParser {
+public class JSONGetter {
     private static final String MAIN_URL = "http://188.166.211.222:9090/messages.json ";
     private static Response response;
 
 
-    //method for parsing json object
+    //method for get json object
     public static JSONObject getObject(){
         try{
             OkHttpClient client = new OkHttpClient();
@@ -36,7 +36,7 @@ public class JSONParser {
         return null;
     }
 
-    //method for parsing json array
+    //method for get json array
     public static JSONArray getArray(){
         try{
             OkHttpClient client = new OkHttpClient();
